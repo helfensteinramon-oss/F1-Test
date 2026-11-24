@@ -769,6 +769,17 @@ body{background:#080f12;font-family:Inter,Segoe UI,Arial,sans-serif}header{paddi
 #drivers .compact-full :is(th,td):nth-child(3),#teams .compact-full :is(th,td):nth-child(2){border-right:1px solid #75934b!important;}
 }
 </style>
+<style id="mobile-team-statistics-width-fix">
+@media screen and (max-width:767px){
+#teams .compact-full table{width:1474px!important;min-width:1474px!important;max-width:none!important;table-layout:fixed!important;}
+#teams .compact-full table :is(th,td):nth-child(2){width:112px!important;min-width:112px!important;max-width:112px!important;overflow:hidden!important;}
+#teams .compact-full table :is(th,td):nth-child(3){width:202px!important;min-width:202px!important;max-width:202px!important;overflow:hidden!important;text-overflow:ellipsis;}
+#teams .compact-full td:nth-child(2) .teamcell{display:block!important;width:100%!important;min-width:0!important;max-width:100%!important;overflow:hidden!important;white-space:normal!important;}
+#teams .compact-full td:nth-child(2) .teamcell :is(img,svg,.logo){display:none!important;}
+#teams .compact-full td:nth-child(2) .teamcell b{display:block;white-space:normal!important;overflow-wrap:normal!important;font-size:12px!important;line-height:1.2;}
+#teams .compact-full table :is(th,td):nth-child(n+4){overflow:hidden!important;text-overflow:ellipsis;}
+}
+</style>
 <header><div class="brand">SIM RACING LEAGUE / 2026–27</div><div class="title">DIVEBOMB<span> RACING</span></div><div class="sub">Race control · Championship · Community</div><div class="preview-label">DESIGN LAB / 01 <span>Demo · keine Live-Daten</span></div></header>
 <div class="wrap"><div class="demo-strip no-print"><span>◉ DESIGNENTWURF · Fiktive Resultate · Änderungen nur bis zum Neuladen</span><button id="demoMode" type="button">Editor-Ansicht testen</button></div>
 <div id="cloudBar" class="cloudbar no-print">
